@@ -11,8 +11,6 @@
     <!-- Le styles -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="css/climbo.css" rel="stylesheet" media="screen">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
@@ -21,15 +19,15 @@
 
   <body>
 
-    <div class="container-narrow">
-      <div class="masthead">
+    <div class="container">
+      <div class="header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">El proyecto</a></li>
           <li><a href="quien-somos.html">El equipo</a></li>
           <li><a href="http://climboinfo.wordpress.com" target="_blank">Blog</a></li>
 		  <!--<li><a href="contacto.html">Contacto</a></li>-->
         </ul>
-        <h3 class="muted">climbo</h3>
+        <h3 class="text-muted">climbo.info</h3>
       </div>
 
       <hr>
@@ -37,14 +35,14 @@
       <div class="jumbotron">
         <h1>Tú comunidad de escalada</h1>
         <p class="lead">Almacena tus escaladas no importa si eres un profesional o un principiante. Introduce nuevas vías de escalada con la cantidad de detalle que desees o elije entre todas nuestras rutas y descubre nuevos lugares para escalar. Comparte tus logros con quien tu quieras.</p>
-        <a class="btn btn-large btn-success" href="http://signup.climbo.info/" target="_blank">Registrate</a>
+        <a class="btn btn-large btn-success" href="http://signup.climbo.info/" target="_blank">Comienza Ya!</a>
       </div>
 
       <hr>
 	  
 	<!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
 	    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 	    <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -82,41 +80,14 @@
           </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div><!-- /.carousel -->
 
-
-	  <!--
-      <div class="row-fluid marketing">
-		<div class="span6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-
-        <div class="span6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-      </div>
-
-      <hr>
-	  -->
+	<hr>
       <div class="footer">
-		<div class="row-fluid">
-			<div class="span4">
+		<div class="row">
+			<div class="col-md-4">
 			<ul class="footer_links">
 				<li><b>Climbo</b></li>
 				<li><a href="index.html">El proyecto</a></li>
@@ -124,7 +95,7 @@
 				<li><a href="http://climboinfo.wordpress.com" target="_blank">Blog</a></li>
 			</ul>
 			</div>
-			<div class="span4">
+			<div class="col-md-4">
 			<ul class="footer_links">
 				<li><b>Contacto</b></li>
 				<!--<li><a href="contacto.html">Contactanos</a></li>-->
@@ -132,7 +103,7 @@
 				<li><a href="https://twitter.com/climboinfo" target="_blank">Twitter</a></li>
 			</ul>
 			</div>
-			<div class="span4">
+			<div class="col-md-4">
 			<p>&copy; climbo</p>
 			</div>
 		</div>
