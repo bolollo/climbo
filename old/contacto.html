@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>climbo.info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/climbo.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+  <body>
+
+    <div class="container-narrow">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="index.html">El proyecto</a></li>
+          <li><a href="quien-somos.html">El equipo</a></li>
+          <!--<li><a href="http://climboinfo.wordpress.com" target="_blank">Blog</a></li>-->
+		  <li class="active"><a href="">Contacto</a></li>
+        </ul>
+        <h3 class="muted">climbo.info</h3>
+      </div>
+
+      <hr>
+
+	  <?php  
+  
+        // check for a successful form post  
+        if (isset($_GET['s'])) echo "<div class=\"alert alert-success\">".$_GET['s']."</div>";  
+  
+        // check for a form error  
+        elseif (isset($_GET['e'])) echo "<div class=\"alert alert-error\">".$_GET['e']."</div>";  
+  
+	  ?> 
+	  
+      <div class="row">
+		<div class="span6">
+			<form method="POST" action="contact.php">
+			<div class="controls controls-row">
+			<input id="name" name="contact_name" type="text" class="span3" placeholder="Name">
+			<input id="email" name="contact_email" type="email" class="span3" placeholder="Email address">
+			</div>
+			<div class="controls">
+			<textarea id="message" name="contact_message" class="span6" placeholder="Your Message" rows="5"></textarea>
+			</div>
+			<div class="controls">
+			<input type="hidden" name="save" value="contacto climbo">
+			<button id="contact-submit" type="submit" class="btn btn-primary input-medium pull-right">Enviar</button>
+			</div>
+			</form>
+		</div>
+	  </div>
+	  <hr>
+	  
+      <div class="footer">
+		<div class="row-fluid">
+			<div class="span4">
+			<ul class="footer_links">
+				<li><b>Climbo</b></li>
+				<li><a href="index.html">El proyecto</a></li>
+				<li><a href="quien-somos.html">El equipo</a></li>
+				<!--<li><a href="http://climboinfo.wordpress.com" target="_blank">Blog</a></li>-->
+			</ul>
+			</div>
+			<div class="span4">
+			<ul class="footer_links">
+				<li><b>Contacto</b></li>
+				<li><a href="contacto.html">Contactanos</a></li>
+				<li><a href="https://www.facebook.com/climboinfo" target="_blank">Facebook</a></li>
+				<li><a href="https://twitter.com/climboinfo" target="_blank">Twitter</a></li>
+			</ul>
+			</div>
+			<div class="span4">
+			<p>&copy; climbo.info</p>
+			</div>
+		</div>
+	  </div>
+     
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
